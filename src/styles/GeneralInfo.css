@@ -1,1 +1,8 @@
-
+#generalInfo {
+  margin: 2em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: #fffcfb;
+  border-radius: 5%;
+}

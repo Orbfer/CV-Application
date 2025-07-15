@@ -3,13 +3,12 @@ import "../styles/GeneralInfo.css";
 export default function GeneralInfo({ info, setInfo }) {
   const handleChange = (e) => {
     setInfo({ ...info, [e.target.name]: e.target.value });
-    console.log(info);
   };
   return (
     <div id="generalInfo">
       <h1>Personal Information</h1>
       <div className="inputCont">
-        <div>Full Name</div>
+        <div>Full Name:</div>
         <input
           name="name"
           value={info.name}
@@ -18,7 +17,7 @@ export default function GeneralInfo({ info, setInfo }) {
         />
       </div>
       <div className="inputCont">
-        <div>Phone Number</div>
+        <div>Phone Number:</div>
         <input
           name="phone"
           value={info.phone}
@@ -27,7 +26,7 @@ export default function GeneralInfo({ info, setInfo }) {
         />
       </div>
       <div className="inputCont">
-        <div>Email</div>
+        <div>Email:</div>
         <input
           name="email"
           value={info.email}
@@ -36,7 +35,7 @@ export default function GeneralInfo({ info, setInfo }) {
         />
       </div>
       <div className="inputCont">
-        <div>Address</div>
+        <div>Address:</div>
         <input
           name="address"
           value={info.address}

@@ -12,14 +12,28 @@ function App() {
     phone: "+1 212-456-7890",
     address: "Sacramento, CA",
   });
+  const [edInfo, setEdInfo] = useState({
+    school: "Cornell University",
+    degree: "Bachelors in Economics",
+    startDate: "10/2020",
+    endDate: "07/2024",
+  });
+  const [expInfo, setExpInfo] = useState({
+    company: "Chase Bank",
+    position: "Financial advisor",
+    startDate: "09/2024",
+    endDate: "present",
+    description:
+      "asdadaasdadsadsdasdasadsadsdasdadadasdasdsadasdasdasdasdsadasdasdasadsasdasdasdsadsadsadsadsadasdadadada",
+  });
   return (
     <div id="appCont">
       <div id="infoCont">
         <GeneralInfo info={info} setInfo={setInfo}></GeneralInfo>
-        <Education></Education>
-        <Experience></Experience>
+        <Education edInfo={edInfo} setEdInfo={setEdInfo}></Education>
+        <Experience expInfo={expInfo} setExpInfo={setExpInfo}></Experience>
       </div>
-      <Resume info={info}></Resume>
+      <Resume info={info} edInfo={edInfo} expInfo={expInfo}></Resume>
     </div>
   );
 }

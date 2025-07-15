@@ -1,3 +1,51 @@
+#resumeCont {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  background-color: #fffcfb;
+  font-family: "DM Serif Text", serif;
+  width: 50%;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a4ccd9;
+  width: 100%;
+}
 #name {
+  font-size: 3em;
   font-weight: bold;
+}
+#addInfoCont {
+  display: flex;
+  gap: 1em;
+  font-size: 1.5em;
+}
+#education,
+#experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#edTitle,
+#expTitle {
+  font-size: 2em;
+  font-weight: bold;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+}
+#edDetailsCont,
+#expDetailsCont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
 }
