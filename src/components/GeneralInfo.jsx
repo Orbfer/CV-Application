@@ -6,7 +6,7 @@ export default function GeneralInfo({ info, setInfo }) {
   };
   return (
     <div id="generalInfo">
-      <h1>Personal Information</h1>
+      <div id="infoTitle">Personal Information</div>
       <div className="inputCont">
         <div>Full Name:</div>
         <input

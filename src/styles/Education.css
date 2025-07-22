@@ -1,0 +1,11 @@
+#education {
+  width: 80%;
+
+  padding: 1em;
+  background-color: #fffcfb;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
